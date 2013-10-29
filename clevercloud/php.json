@@ -1,7 +1,7 @@
 {
     "deploy": {
       "webroot": "/public",
-    }
+    },
     "hooks": {
         "postDeploy": "ccbuild.sh"
     }
