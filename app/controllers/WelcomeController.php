@@ -1,6 +1,6 @@
 <?php
 
-class WelcomeController extends \BaseController {
+class WelcomeController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -10,6 +10,7 @@ class WelcomeController extends \BaseController {
 	public function index()
 	{
 		//
+		return("<h1>Hello Laravel</h1>")
 	}
 
 	/**
