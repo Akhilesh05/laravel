@@ -10,7 +10,7 @@ class WelcomeController extends BaseController {
 	public function index()
 	{
 		//
-		return("<h1>Hello Laravel</h1>")
+		return("<h1>Hello Laravel</h1>");
 	}
 
 	/**
