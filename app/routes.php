@@ -17,3 +17,4 @@ Route::get('/', function()
 });
 Route::get('welcome', 'WelcomeController@index');
 Route::post("form", "WelcomeController@form");
+Route::get('{link_id}', 'WelcomeController@link') -> where('link_id', '[-_~.0-9A-Za-z]{4}')
