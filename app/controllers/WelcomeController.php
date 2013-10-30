@@ -22,7 +22,7 @@ class WelcomeController extends BaseController {
 	{
 		//
                 $name = Input::get("name");
-                return $name
+                return $name;
 	}
 
 	/**
