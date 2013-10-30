@@ -18,9 +18,10 @@ class WelcomeController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function form()
 	{
 		//
+                $name = Input::get("name");
 	}
 
 	/**
