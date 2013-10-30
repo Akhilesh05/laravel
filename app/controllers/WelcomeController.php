@@ -22,7 +22,8 @@ class WelcomeController extends BaseController {
 	{
 		//
                 $name = Input::get("name");
-                return $name;
+                $ret = "you posted name to be ".$name;
+                return $ret;
 	}
 
 	/**
