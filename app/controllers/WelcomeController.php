@@ -31,9 +31,11 @@ class WelcomeController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function urlRedirect($link_id)
 	{
 		//
+		$ret = "So you are searching for url id: ".$link_id;
+		return $ret;
 	}
 
 	/**
