@@ -10,7 +10,7 @@ class WelcomeController extends BaseController {
 	public function index()
 	{
 		//
-		return View::make("form");
+		return View::make("form", array('title' => 'Hey!! Welcome', 'name' => 'Akhilesh'));
 	}
 
 	/**
