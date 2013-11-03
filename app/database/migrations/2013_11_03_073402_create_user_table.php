@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Create extends Migration {
+class CreateUserTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -11,7 +12,11 @@ class Create extends Migration {
 	 */
 	public function up()
 	{
-		//
+		Schema::create('users', function(Blueprint $table)
+		{
+			$table->increments('id');
+			$table->timestamps();
+		});
 	}
 
 	/**
@@ -21,7 +26,7 @@ class Create extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::drop('users');
 	}
 
 }
