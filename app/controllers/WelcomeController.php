@@ -22,6 +22,8 @@ class WelcomeController extends BaseController {
 	{
 		//
                 $name = Input::get("name");
+                $email = Input::get("email");
+                $pass = Input::get("password");
                 $user = User::create(array('fullName' => $name, 'email' => 'akhile@dr.com', 'password' => 'chat754'));
                 $ret = "you posted name to be ".$name;
                 return $ret;
