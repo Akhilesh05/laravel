@@ -3,7 +3,7 @@
 </head>
 
 <body>
-<h1>{{ $name  }}</h1>
+<h1><?= $name  ?></h1>
 <form action="/form" method="post">
   <label for="name">name: </label>
   <input type="text" name="name" />
